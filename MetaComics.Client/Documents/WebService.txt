@@ -1,0 +1,146 @@
+﻿<?xml version="1.0"?>
+<configuration>
+    <configSections>
+    </configSections>
+    <connectionStrings>
+        <add name="MetaComics.Client.Properties.Settings.ConnectionString" connectionString="data source=&quot;W:\Dev Project\trunk\MetaComics\MetaComics.Client\bin\Debug\12.s3db&quot;" providerName="System.Data.SQLite"/>
+    </connectionStrings>
+    <system.serviceModel>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="DailyDilbertSoap" closeTimeout="00:01:00" openTimeout="00:01:00" receiveTimeout="00:10:00" sendTimeout="00:01:00" allowCookies="false" bypassProxyOnLocal="false" hostNameComparisonMode="StrongWildcard" maxBufferSize="65536" maxBufferPoolSize="524288" maxReceivedMessageSize="65536" messageEncoding="Text" textEncoding="utf-8" transferMode="Buffered" useDefaultWebProxy="true">
+                    <readerQuotas maxDepth="32" maxStringContentLength="8192" maxArrayLength="16384" maxBytesPerRead="4096" maxNameTableCharCount="16384"/>
+                    <security mode="None">
+                        <transport clientCredentialType="None" proxyCredentialType="None" realm=""/>
+                        <message clientCredentialType="UserName" algorithmSuite="Default"/>
+                    </security>
+                </binding>
+            </basicHttpBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://www.esynaps.com/webservices/DailyDilbert.asmx" binding="basicHttpBinding" bindingConfiguration="DailyDilbertSoap" contract="DailyDilbertWS.DailyDilbertSoap" name="DailyDilbertSoap"/>
+        </client>
+    </system.serviceModel>
+<startup><supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.0"/></startup></configuration>
+
+
+
+
+This Web Service has two interfaces. One returns Image in Bytes and the other ImagePath in string. 
+Enjoy the Dilbert strips! :) 
+
+
+Imports System.IO
+Imports System.Net
+Imports System.Text
+Imports System.Drawing
+Imports System.Web.Services
+Imports System.Drawing.Imaging
+
+Public Class DailyDilbert
+    Inherits System.Web.Services.WebService
+
+#Region " Web Services Designer Generated Code "
+
+    Public Sub New()
+        MyBase.New()
+
+        'This call is required by the Web Services Designer.
+        InitializeComponent()
+
+        'Add your own initialization code after the InitializeComponent() call
+
+    End Sub
+
+    'Required by the Web Services Designer
+    Private components As System.ComponentModel.Container
+
+    'NOTE: The following procedure is required by the Web Services Designer
+    'It can be modified using the Web Services Designer.  
+    'Do not modify it using the code editor.
+     Private Sub InitializeComponent()
+        components = New System.ComponentModel.Container()
+    End Sub
+
+    Protected Overloads Overrides Sub Dispose(ByVal disposing As Boolean)
+        'CODEGEN: This procedure is required by the Web Services Designer
+        'Do not modify it using the code editor.
+    End Sub
+
+#End Region
+
+     _
+    Public Function DailyDilbertImage() As Byte()
+
+        Dim objDilbertImg As Image
+        Dim objHTTPReq As New WebClient()
+        Dim objMemStr As New MemoryStream()
+        Dim strAddress As String
+        Dim strImageAddress As String
+        Dim objStream As StreamReader
+
+        Try
+            strAddress = "http://www.dilbert.com/comics/dilbert/archive/"
+
+            objStream = New StreamReader(objHTTPReq.OpenRead(strAddress), Encoding.ASCII)
+
+            strAddress = objStream.ReadToEnd
+
+            If InStr(strAddress, "/comics/dilbert/archive/images/dilbert") > 0 Then
+                strImageAddress = "http://www.dilbert.com"
+                strImageAddress += Mid(strAddress, InStr(strAddress, "/comics/dilbert/archive/images/dilbert"), 56)
+                objDilbertImg = New Bitmap(objHTTPReq.OpenRead(strImageAddress))
+                objDilbertImg.Save(objMemStr, ImageFormat.Gif)
+                'Else
+
+            End If
+        Catch
+
+        End Try
+
+        DailyDilbertImage = objMemStr.GetBuffer
+
+        objMemStr = Nothing
+        objHTTPReq = Nothing
+        objDilbertImg = Nothing
+        objStream = Nothing
+
+    End Function
+
+    Public Function DailyDilbertImagePath() As String
+
+        Dim objDilbertImg As Image
+        Dim objHTTPReq As New WebClient()
+        Dim strAddress As String
+        Dim strImageAddress As String
+        Dim objStream As StreamReader
+
+        Try
+            strAddress = "http://www.dilbert.com/comics/dilbert/archive/"
+
+            objStream = New StreamReader(objHTTPReq.OpenRead(strAddress), Encoding.ASCII)
+
+            strAddress = objStream.ReadToEnd
+
+            If InStr(strAddress, "/comics/dilbert/archive/images/dilbert") > 0 Then
+                strImageAddress = "http://www.dilbert.com"
+                strImageAddress += Mid(strAddress, InStr(strAddress, "/comics/dilbert/archive/images/dilbert"), 56)
+                'Else
+
+            End If
+        Catch
+
+        End Try
+
+        DailyDilbertImagePath = strImageAddress
+
+        objHTTPReq = Nothing
+        objDilbertImg = Nothing
+        objStream = Nothing
+
+    End Function
+
+
+End Class
+
+

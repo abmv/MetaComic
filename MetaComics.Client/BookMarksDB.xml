@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<BookMarks>
+  <BookMark>
+    <Image>
+      bc_2011-02-18_let_go.png
+    </Image>
+    <ImagePath>
+      D:\stuff\My Dropbox\MCDailyDilbert\MetaComics.Client\bin\Debug\Strip\XKCD\2011-02-18\bc_2011-02-18_let_go.png
+    </ImagePath>
+    <BookMarkedDate>2/25/2011 9:37:46 PM</BookMarkedDate>
+  </BookMark>
+  <BookMark>
+    <Image>
+      blnde_2011-02-09_158296.gif
+    </Image>
+    <ImagePath>
+      D:\stuff\My Dropbox\MCDailyDilbert\MetaComics.Client\bin\Debug\Strip\Blondie\2011-02-09\blnde_2011-02-09_158296.gif
+    </ImagePath>
+    <BookMarkedDate>2/25/2011 9:57:30 PM</BookMarkedDate>
+  </BookMark>
+  <BookMark>
+    <Image>
+      fs_2011-02-12_159168.gif
+    </Image>
+    <ImagePath>
+      D:\stuff\My Dropbox\MCDailyDilbert\MetaComics.Client\bin\Debug\Strip\FamilyCircus\2011-02-12\fs_2011-02-12_159168.gif
+    </ImagePath>
+    <BookMarkedDate>
+      2/25/2011 10:13:01 PM
+    </BookMarkedDate>
+  </BookMark>
+  <BookMark>
+    <Image>
+      blnde_2011-02-11_158978.gif
+    </Image>
+    <ImagePath>
+      D:\stuff\My Dropbox\MCDailyDilbert\MetaComics.Client\bin\Debug\Strip\Blondie\2011-02-11\blnde_2011-02-11_158978.gif
+    </ImagePath>
+    <BookMarkedDate>
+      2/25/2011 10:30:55 PM
+    </BookMarkedDate>
+  </BookMark>
+  <BookMark>
+    <Image>
+      xkcd_2011-02-25_nanobots.png
+    </Image>
+    <ImagePath>
+      D:\stuff\My Dropbox\MCDailyDilbert\MetaComics.Client\bin\Debug\Strip\XKCD\2011-02-25\xkcd_2011-02-25_nanobots.png
+    </ImagePath>
+    <BookMarkedDate>
+      2/26/2011 12:10:55 PM
+    </BookMarkedDate>
+  </BookMark>
+  <BookMark>
+    <Image>
+      pvp_2011-02-25_pvp20110225.png
+    </Image>
+    <ImagePath>
+      D:\stuff\My Dropbox\MCDailyDilbert\MetaComics.Client\bin\Debug\Strip\PvP\2011-02-25\pvp_2011-02-25_pvp20110225.png
+    </ImagePath>
+    <BookMarkedDate>2/26/2011 2:08:08 PM</BookMarkedDate>
+  </BookMark>
+  <BookMark>
+    <Image>
+      rtl_2011-02-19_Retail.20110219_large.gif
+    </Image>
+    <ImagePath>
+      D:\stuff\My Dropbox\MCDailyDilbert\MetaComics.Client\bin\Debug\Strip\Retail\2011-02-19\rtl_2011-02-19_Retail.20110219_large.gif
+    </ImagePath>
+    <BookMarkedDate>2/26/2011 2:09:18 PM</BookMarkedDate>
+  </BookMark>
+  <BookMark>
+    <Image>
+      dun_2011-02-13_159444.jpg
+    </Image>
+    <ImagePath>
+      D:\stuff\My Dropbox\MCDailyDilbert\MetaComics.Client\bin\Debug\Strip\Doonesbury\2011-02-13\dun_2011-02-13_159444.jpg
+    </ImagePath>
+    <BookMarkedDate>2/26/2011 2:09:38 PM</BookMarkedDate>
+  </BookMark>
+  <BookMark>
+    <Image>
+      wfgr_2011-02-25_WM_strip_DK_20110225.jpg
+    </Image>
+    <ImagePath>
+      D:\stuff\My Dropbox\MCDailyDilbert\MetaComics.Client\bin\Debug\Strip\wulffmorgenthaler\2011-02-25\wfgr_2011-02-25_WM_strip_DK_20110225.jpg
+    </ImagePath>
+    <BookMarkedDate>2/26/2011 2:10:01 PM</BookMarkedDate>
+  </BookMark>
+  <BookMark>
+    <Image>
+      wfgr_2011-02-22_WM_strip_DK_20110222.jpg
+    </Image>
+    <ImagePath>
+      D:\stuff\My Dropbox\MCDailyDilbert\MetaComics.Client\bin\Debug\Strip\wulffmorgenthaler\2011-02-22\wfgr_2011-02-22_WM_strip_DK_20110222.jpg
+    </ImagePath>
+    <BookMarkedDate>2/26/2011 2:10:06 PM</BookMarkedDate>
+  </BookMark>
+</BookMarks>

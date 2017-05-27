@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4D91351F-E070-4B01-AADB-031F8E6A9F16}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MetaComics.Client</RootNamespace>
+    <AssemblyName>MetaComics.Client</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>MetaComics.Client.Program</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>MetaComics.Client.exe.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ColorPicker, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\ColorPicker.dll</HintPath>
+    </Reference>
+    <Reference Include="ExceptionReporter.WinForms, Version=2.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\ExceptionReporter.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="FullScreenMode, Version=1.0.2474.24098, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\FullScreenMode.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip, Version=1.9.1.5, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL" />
+    <Reference Include="itextsharp, Version=5.0.6.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=1.0.0.505, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Services, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Code\Model\AppSettings.cs" />
+    <Compile Include="Code\Model\Category.cs" />
+    <Compile Include="Code\Model\FeedFetchStatCollection.cs" />
+    <Compile Include="Code\Model\FeedFetchStats.cs" />
+    <Compile Include="Code\PDF\PDFImageWorks\ImageFileAttributes.cs" />
+    <Compile Include="Code\PDF\PDFImageWorks\ImageFolderQuickCheck.cs" />
+    <Compile Include="Code\PDF\PDFImageWorks\ImageHeader.cs" />
+    <Compile Include="Code\PDF\PDFImageWorks\ImageList.cs" />
+    <Compile Include="Code\PDF\PDFImageWorks\ImageListToXml.cs" />
+    <Compile Include="Code\PDF\PDFImageWorks\ImageOrientation.cs" />
+    <Compile Include="Code\PDF\PDFImageWorks\ImageOrientationThreaded.cs" />
+    <Compile Include="Code\Utils\CodePlexUpdateChecker.cs" />
+    <Compile Include="Code\Utils\DateTimeRoutines.cs" />
+    <Compile Include="Code\Helpers\FindLinks.cs" />
+    <Compile Include="Code\PDF\ComicStrip2PDF.cs" />
+    <Compile Include="Code\Model\PluginInfo.cs" />
+    <Compile Include="Code\Utils\FeedFetchStatsController.cs" />
+    <Compile Include="Code\Utils\FeedFetchStatsUpdater.cs" />
+    <Compile Include="Code\Utils\NetChecker.cs" />
+    <Compile Include="Code\Utils\PopupWindow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Experimental\RSSFeedGenerator.cs" />
+    <Compile Include="Code\Utils\TimeSpanUtil.cs" />
+    <Compile Include="Experimental\UserRSSFeedGen.cs" />
+    <Compile Include="Plugin\AchewoodComicPlugin.cs" />
+    <Compile Include="Plugin\AfterStrifeComicPlugin.cs" />
+    <Compile Include="Plugin\AlienLovesPredatorComicPlugin.cs" />
+    <Compile Include="Plugin\AMultiverseComicPlugin.cs" />
+    <Compile Include="Plugin\ArbitMBAComicPlugin.cs" />
+    <Compile Include="Plugin\BeardFluffComicPlugin.cs" />
+    <Compile Include="Plugin\BadMachineryComicPlugin.cs" />
+    <Compile Include="Plugin\CatAndGirlComicPlugin.cs" />
+    <Compile Include="Plugin\ComicsDotComRSSPlugin.cs" />
+    <Compile Include="Plugin\DrMcNinjaComicPlugin.cs" />
+    <Compile Include="Plugin\EQComicsComicPlugin.cs" />
+    <Compile Include="Plugin\FlimsythekittenComicPlugin.cs" />
+    <Compile Include="Plugin\GoatsComicPlugin.cs" />
+    <Compile Include="Plugin\GunShowComicPlugin.cs" />
+    <Compile Include="Plugin\GuysWithBrainComicPlugin.cs" />
+    <Compile Include="Plugin\HaikucircusComicPlugin.cs" />
+    <Compile Include="Plugin\JesusnMoComicPlugin.cs" />
+    <Compile Include="Plugin\LAWLSComicPlugin.cs" />
+    <Compile Include="Plugin\LeftHandedToonComicPlugin.cs" />
+    <Compile Include="Plugin\MachineGumComicPlugin.cs" />
+    <Compile Include="Plugin\NameRemovedComicPlugin.cs" />
+    <Compile Include="Plugin\NobodyScoresComicPlugin.cs" />
+    <Compile Include="Plugin\NorthworldComicPlugin.cs" />
+    <Compile Include="Plugin\OverCompensatingComicPlugin.cs" />
+    <Compile Include="Plugin\PFSComicPlugin.cs" />
+    <Compile Include="Plugin\PlanetKarenComicPlugin.cs" />
+    <Compile Include="Plugin\QuestionableContentComicPlugin.cs" />
+    <Compile Include="Plugin\RobTheBotComicPlugin.cs" />
+    <Compile Include="Plugin\SilentKimblyComicPlugin.cs" />
+    <Compile Include="Plugin\SmapusmentComicPlugin.cs" />
+    <Compile Include="Plugin\SmbcComicPlugin.cs" />
+    <Compile Include="Plugin\SpaceTrawlerComicPlugin.cs" />
+    <Compile Include="Plugin\StarslipComicPlugin.cs" />
+    <Compile Include="Plugin\TemplarAZComicPlugin.cs" />
+    <Compile Include="Plugin\TheDevilsPantiesComicPlugin.cs" />
+    <Compile Include="Plugin\TheFlowFieldUnityComicPlugin.cs" />
+    <Compile Include="Plugin\UnrehearsedRiotComicPlugin.cs" />
+    <Compile Include="Plugin\WebDonutsComicPlugin.cs" />
+    <Compile Include="Plugin\WoodyAfterHoursComicPlugin.cs" />
+    <Compile Include="UI\RSSReader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\RSSReader.Designer.cs">
+      <DependentUpon>RSSReader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Welcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Welcome.Designer.cs">
+      <DependentUpon>Welcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ZoomPanImageBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Plugin\BCComicPlugin.cs" />
+    <Compile Include="Plugin\BleekerComicPlugin.cs" />
+    <Compile Include="Plugin\BlondieComicPlugin.cs" />
+    <Compile Include="Plugin\CalvinAndHobbesComicPlugin.cs" />
+    <Compile Include="Plugin\ChainsawsuitComicPlugin.cs" />
+    <Compile Include="Plugin\DayByDayComicPlugin.cs" />
+    <Compile Include="Plugin\DieselSweetiesComicPlugin.cs" />
+    <Compile Include="Plugin\DilbertComicPlugin.cs" />
+    <Compile Include="Code\Helpers\SingleProgramInstance.cs" />
+    <Compile Include="Code\Utils\StartUp.cs" />
+    <Compile Include="Code\Model\XMLCategory.cs" />
+    <Compile Include="Plugin\DinosaurComicPlugin.cs" />
+    <Compile Include="Plugin\DogsCKennelComicPlugin.cs" />
+    <Compile Include="Plugin\DoonesburyComicPlugin.cs" />
+    <Compile Include="Plugin\FamilyCircusPlugin.cs" />
+    <Compile Include="Plugin\FoxTrotComicPlugin.cs" />
+    <Compile Include="Plugin\GarfieldComicPlugin.cs" />
+    <Compile Include="Plugin\GastrophobiaComicPlugin.cs" />
+    <Compile Include="Plugin\IndexedComicPlugin.cs" />
+    <Compile Include="Plugin\JustABitOffComicPlugin.cs" />
+    <Compile Include="Plugin\KittyHawkComicPlugin.cs" />
+    <Compile Include="Plugin\MotherGoosenGrimmComicPlugin.cs" />
+    <Compile Include="Plugin\OhBrotherComicPlugin.cs" />
+    <Compile Include="Plugin\PHDComicPlugin.cs" />
+    <Compile Include="Plugin\PvPComicPlugin.cs" />
+    <Compile Include="Plugin\RetailComicPlugin.cs" />
+    <Compile Include="Plugin\ThisModernWorldComicPlugin.cs" />
+    <Compile Include="Plugin\SmallPicturelComicPlugin.cs" />
+    <Compile Include="Plugin\TinasGrooveComicPlugin.cs" />
+    <Compile Include="Plugin\TpasteForDnerComicPlugin.cs" />
+    <Compile Include="Plugin\WizardOfIdComicPlugin.cs" />
+    <Compile Include="Plugin\WondermarkComicPlugin.cs" />
+    <Compile Include="Plugin\WulffmorgenthalerComicPlugin.cs" />
+    <Compile Include="Plugin\XKCDComicPlugin.cs" />
+    <Compile Include="UI\AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Helpers\FileSystem.cs" />
+    <Compile Include="UI\Archive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Archive.Designer.cs">
+      <DependentUpon>Archive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Disclaimer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Disclaimer.Designer.cs">
+      <DependentUpon>Disclaimer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MainUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MainUI.Designer.cs">
+      <DependentUpon>MainUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PictureBoxAR.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Code\Core\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\Options.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Options.Designer.cs">
+      <DependentUpon>Options.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Plugins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Plugins.Designer.cs">
+      <DependentUpon>Plugins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Statistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Statistics.Designer.cs">
+      <DependentUpon>Statistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ComicCollector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ComicCollector.Designer.cs">
+      <DependentUpon>ComicCollector.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UI\RSSReader.resx">
+      <DependentUpon>RSSReader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Welcome.resx">
+      <DependentUpon>Welcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ZoomPanImageBox.resx">
+      <DependentUpon>ZoomPanImageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UI\Archive.resx">
+      <DependentUpon>Archive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Disclaimer.resx">
+      <DependentUpon>Disclaimer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MainUI.resx">
+      <DependentUpon>MainUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Options.resx">
+      <DependentUpon>Options.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Plugins.resx">
+      <DependentUpon>Plugins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Statistics.resx">
+      <DependentUpon>Statistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ComicCollector.resx">
+      <DependentUpon>ComicCollector.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Code\Model\FeedFetchStatsSchema.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MetaComics.Client.exe.manifest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Documents\MetaComic_Client_User_Manual.doc" />
+    <None Include="metacomicsclient.chm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Code\Utils\Utlity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App.ico" />
+    <Content Include="BookMarksDB.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Category.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ColorPicker.dll" />
+    <Content Include="ComicDB\ComicInfoDB.xml" />
+    <Content Include="Comics_RSS_DB.txt" />
+    <Content Include="ExceptionReporter.WinForms.dll" />
+    <Content Include="ExceptionReporter.WinForms.xml" />
+    <Content Include="FullScreenMode.dll" />
+    <Content Include="Ionic.Zip.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="itextsharp.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="LICENSE.txt" />
+    <Content Include="MetaComics.jpg" />
+    <Content Include="nBayes.dll" />
+    <Content Include="NLog.dll" />
+    <Content Include="Documents\TODO.txt" />
+    <Content Include="README.txt" />
+    <Content Include="Resources\bug.png" />
+    <Content Include="Resources\calendar.png" />
+    <Content Include="Resources\feedback.png" />
+    <Content Include="Resources\news.ico" />
+    <Content Include="Resources\sshow.ICO" />
+    <Content Include="Resources\stats.png" />
+    <Content Include="Resources\alert.ico" />
+    <Content Include="Resources\database.ico" />
+    <Content Include="Resources\error.ico" />
+    <Content Include="Resources\favourites.ico" />
+    <Content Include="Resources\fullscreen.ico" />
+    <Content Include="Resources\plugin.ico" />
+    <Content Include="Resources\comiccollector.ico" />
+    <Content Include="Resources\minimize.png" />
+    <Content Include="Resources\openfile.ico" />
+    <Content Include="Resources\stats1.ico" />
+    <Content Include="Resources\stats.ico" />
+    <Content Include="Documents\WebService.txt" />
+    <Content Include="Resources\about.ico" />
+    <Content Include="Resources\help.ico" />
+    <Content Include="Resources\New.ico" />
+    <Content Include="Resources\settings.ico" />
+    <Content Include="Resources\archive.ico" />
+    <Content Include="Resources\update.png" />
+    <Content Include="Resources\onlinehelp.ico" />
+    <Content Include="Resources\website.png" />
+    <Content Include="Revision_History.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MetaComic.Plugin\MetaComic.Plugin.csproj">
+      <Project>{C52933C8-A350-4500-83BF-0B54B060745C}</Project>
+      <Name>MetaComic.Plugin</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

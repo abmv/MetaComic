@@ -1,0 +1,25 @@
+C:\Users\WELCOME\documents\visual studio 2010\Projects\mc\mc\bin\Release\mc.exe.manifest
+C:\Users\WELCOME\documents\visual studio 2010\Projects\mc\mc\bin\Release\mc.application
+C:\Users\WELCOME\documents\visual studio 2010\Projects\mc\mc\bin\Release\mc.exe
+C:\Users\WELCOME\documents\visual studio 2010\Projects\mc\mc\bin\Release\mc.pdb
+C:\Users\WELCOME\documents\visual studio 2010\Projects\mc\mc\bin\Release\Microsoft.Windows.Shell.dll
+C:\Users\WELCOME\documents\visual studio 2010\Projects\mc\mc\bin\Release\RibbonControlsLibrary.dll
+C:\Users\WELCOME\documents\visual studio 2010\Projects\mc\mc\bin\Release\RibbonControlsLibrary.pdb
+C:\Users\WELCOME\documents\visual studio 2010\Projects\mc\mc\bin\Release\RibbonControlsLibrary.xml
+C:\Users\WELCOME\documents\visual studio 2010\Projects\mc\mc\bin\Release\Microsoft.Windows.Shell.pdb
+C:\Users\WELCOME\documents\visual studio 2010\Projects\mc\mc\bin\Release\Microsoft.Windows.Shell.xml
+C:\Users\WELCOME\documents\visual studio 2010\Projects\mc\mc\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\WELCOME\documents\visual studio 2010\Projects\mc\mc\obj\x86\Release\MainWindow.baml
+C:\Users\WELCOME\documents\visual studio 2010\Projects\mc\mc\obj\x86\Release\MainWindow.g.cs
+C:\Users\WELCOME\documents\visual studio 2010\Projects\mc\mc\obj\x86\Release\App.g.cs
+C:\Users\WELCOME\documents\visual studio 2010\Projects\mc\mc\obj\x86\Release\mc_MarkupCompile.cache
+C:\Users\WELCOME\documents\visual studio 2010\Projects\mc\mc\obj\x86\Release\mc.g.resources
+C:\Users\WELCOME\documents\visual studio 2010\Projects\mc\mc\obj\x86\Release\WpfRibbonApplication1.Properties.Resources.resources
+C:\Users\WELCOME\documents\visual studio 2010\Projects\mc\mc\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\WELCOME\documents\visual studio 2010\Projects\mc\mc\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\WELCOME\documents\visual studio 2010\Projects\mc\mc\obj\x86\Release\mc.exe.manifest
+C:\Users\WELCOME\documents\visual studio 2010\Projects\mc\mc\obj\x86\Release\mc.application
+C:\Users\WELCOME\documents\visual studio 2010\Projects\mc\mc\obj\x86\Release\mc.exe
+C:\Users\WELCOME\documents\visual studio 2010\Projects\mc\mc\obj\x86\Release\mc.pdb
+D:\metacomic\New UI\mc\obj\x86\Release\mc.exe
+D:\metacomic\New UI\mc\obj\x86\Release\mc.pdb

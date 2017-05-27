@@ -1,0 +1,32 @@
+<?xml version="1.0" standalone="yes"?>
+
+<Category>
+  <xs:schema id="Category" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="Category" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="CategoryID" type="xs:string" minOccurs="0" />
+                <xs:element name="CategoryName" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Table>
+    <CategoryID>1</CategoryID>
+    <CategoryName>Good One</CategoryName>
+  </Table>
+  <Table>
+    <CategoryID>2</CategoryID>
+    <CategoryName>Cool</CategoryName>
+  </Table>
+  <Table>
+    <CategoryID>3</CategoryID>
+    <CategoryName>Humour</CategoryName>
+  </Table>
+</Category>

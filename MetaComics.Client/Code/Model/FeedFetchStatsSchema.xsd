@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="FeedFetchStatsList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="FeedFetchStat">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FeedName" type="xs:string" />
+              <xs:element name="FeedFetchRunDate" type="xs:dateTime" />
+              <xs:element name="FeedFetchRunTime" type="xs:dateTime" />
+              <xs:element name="FeedFetchRunMonth" type="xs:int" />
+              <xs:element name="FeedFetchRunYear" type="xs:int" />
+              <xs:element name="FeedPublishStartDate" type="xs:dateTime" />
+              <xs:element name="FeedPublishEndDate" type="xs:dateTime" />
+              <xs:element name="FeedTotalItemCount" type="xs:int" />
+              <xs:element name="FeedFetchRunDateHadCurrentDateItem" type="xs:boolean" />
+              <xs:element name="WorkPhone" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

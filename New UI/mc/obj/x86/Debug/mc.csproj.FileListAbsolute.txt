@@ -1,0 +1,42 @@
+C:\Users\WELCOME\documents\visual studio 2010\Projects\mc\mc\bin\Debug\mc.exe
+C:\Users\WELCOME\documents\visual studio 2010\Projects\mc\mc\bin\Debug\mc.pdb
+C:\Users\WELCOME\documents\visual studio 2010\Projects\mc\mc\bin\Debug\Microsoft.Windows.Shell.dll
+C:\Users\WELCOME\documents\visual studio 2010\Projects\mc\mc\bin\Debug\RibbonControlsLibrary.dll
+C:\Users\WELCOME\documents\visual studio 2010\Projects\mc\mc\bin\Debug\RibbonControlsLibrary.pdb
+C:\Users\WELCOME\documents\visual studio 2010\Projects\mc\mc\bin\Debug\RibbonControlsLibrary.xml
+C:\Users\WELCOME\documents\visual studio 2010\Projects\mc\mc\bin\Debug\Microsoft.Windows.Shell.pdb
+C:\Users\WELCOME\documents\visual studio 2010\Projects\mc\mc\bin\Debug\Microsoft.Windows.Shell.xml
+C:\Users\WELCOME\documents\visual studio 2010\Projects\mc\mc\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\WELCOME\documents\visual studio 2010\Projects\mc\mc\obj\x86\Debug\MainWindow.baml
+C:\Users\WELCOME\documents\visual studio 2010\Projects\mc\mc\obj\x86\Debug\MainWindow.g.cs
+C:\Users\WELCOME\documents\visual studio 2010\Projects\mc\mc\obj\x86\Debug\App.g.cs
+C:\Users\WELCOME\documents\visual studio 2010\Projects\mc\mc\obj\x86\Debug\mc_MarkupCompile.cache
+C:\Users\WELCOME\documents\visual studio 2010\Projects\mc\mc\obj\x86\Debug\mc.g.resources
+C:\Users\WELCOME\documents\visual studio 2010\Projects\mc\mc\obj\x86\Debug\WpfRibbonApplication1.Properties.Resources.resources
+C:\Users\WELCOME\documents\visual studio 2010\Projects\mc\mc\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\WELCOME\documents\visual studio 2010\Projects\mc\mc\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\WELCOME\documents\visual studio 2010\Projects\mc\mc\obj\x86\Debug\mc.exe
+C:\Users\WELCOME\documents\visual studio 2010\Projects\mc\mc\obj\x86\Debug\mc.pdb
+D:\metacomic\New UI\mc\bin\Debug\mc.exe.manifest
+D:\metacomic\New UI\mc\bin\Debug\mc.application
+D:\metacomic\New UI\mc\bin\Debug\mc.exe
+D:\metacomic\New UI\mc\bin\Debug\mc.pdb
+D:\metacomic\New UI\mc\bin\Debug\Microsoft.Windows.Shell.dll
+D:\metacomic\New UI\mc\bin\Debug\RibbonControlsLibrary.dll
+D:\metacomic\New UI\mc\bin\Debug\RibbonControlsLibrary.pdb
+D:\metacomic\New UI\mc\bin\Debug\RibbonControlsLibrary.xml
+D:\metacomic\New UI\mc\bin\Debug\Microsoft.Windows.Shell.pdb
+D:\metacomic\New UI\mc\bin\Debug\Microsoft.Windows.Shell.xml
+D:\metacomic\New UI\mc\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\metacomic\New UI\mc\obj\x86\Debug\MainWindow.baml
+D:\metacomic\New UI\mc\obj\x86\Debug\MainWindow.g.cs
+D:\metacomic\New UI\mc\obj\x86\Debug\App.g.cs
+D:\metacomic\New UI\mc\obj\x86\Debug\mc_MarkupCompile.cache
+D:\metacomic\New UI\mc\obj\x86\Debug\mc.g.resources
+D:\metacomic\New UI\mc\obj\x86\Debug\WpfRibbonApplication1.Properties.Resources.resources
+D:\metacomic\New UI\mc\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\metacomic\New UI\mc\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\metacomic\New UI\mc\obj\x86\Debug\mc.exe.manifest
+D:\metacomic\New UI\mc\obj\x86\Debug\mc.application
+D:\metacomic\New UI\mc\obj\x86\Debug\mc.exe
+D:\metacomic\New UI\mc\obj\x86\Debug\mc.pdb

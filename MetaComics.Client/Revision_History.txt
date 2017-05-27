@@ -1,0 +1,15 @@
+﻿v2.2
+
+NEW: Comic collector to download comics from shared http folders.
+NEW: Added comic plugins.
+FIX: Mutiple bug fixes.
+FIX: Minor UI enhancements.
+NEW: Added Comic Strip to PDF file functionality.
+NEW: Bookmarking of comics.
+NEW: Complete error logging support using NLOG.
+NEW: Menu option to open comic database folder.
+NEW: Background banner for main ui
+NEW: Comic Strip Information in Archive View
+NEW: Menu option for Comic Database Statitics.
+FIX: Webclient used to fetch feed urls.
+NEW: Add to favoutites in Archive Viewer and Virtual view of favourites from Archive Viewer

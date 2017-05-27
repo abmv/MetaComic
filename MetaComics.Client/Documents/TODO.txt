@@ -1,0 +1,107 @@
+﻿
+http://www.gocomics.com/features/rsspage
+
+
+GOTO:http://feeds.feedburner.com/uclick/marmaduke
+parse rss
+find all links
+
+GOTO: http://www.gocomics.com/smallworld/2011/10/18
+
+find http://cdn.svcs.c2.uclick.com/c2/1ac0bed0e0f0012e2fb000163e41dd5b link
+
+and store it...
+
+
+
+
+
+Error Logging. [IN PROGRESS] 
+slide show timing adjust
+///TODO: More into to add to pdf like date time , history of comic
+//TODO: Parse the BookMarksDB.xml and fill combo box with filename of the favourites,and ......
+options//TODO: Add data input validations here....
+--------------------------------------------
+NICE TO HAVE
+--------------------------------------------
+rss 4 pic lens
+compress and move to dropbox : http://forums.dropbox.com/topic.php?id=32548
+if two images in folder inform user
+Intelligent (Portable Document Format) PDF based comic strip layout generation. 
+if favourites selected dont convert for now until we work out the logic
+better comic collector
+define intelli rss updates
+Plug-in code that can get images from HTML based files.
+
+RSS dates and Folder dates checking engine - fast and dynamic rdf linq
+inform user what all comics are updated.
+--------------------------------------------
+KNOWN ISSUES
+
+--------------------------------------------
+flimsythekitten date is wrong
+pdf color not applying on first page
+--------------------------------------------
+
+9 Chickweed Lane
+Amazing Spider-Man
+Animal Crackers
+Apartment 3-G
+Arctic Circle
+B.C.
+Baby Blues
+Barney Google
+Beetle Bailey
+Better Half
+Between Friends
+Bizarro
+Blondie
+Brenda Starr
+Brilliant Mind of Edison Lee
+Buckles
+Cats with Hands
+Close to Home
+Crankshaft
+Crock
+Curtis
+DeFlocked
+Dennis the Menace
+Dilbert
+Drabble
+Edge City
+F Minus
+Family Circus
+Flash Gordon
+Funky Winkerbean
+Grin and Bear It
+Hagar the Horrible
+Hazel
+Heathcliff
+Heaven's Love Thrift Shop
+Henry
+Hi & Lois
+Judge Parker
+Jump Start
+Katzenjammer Kids
+Lockhorns
+Loose Parts
+Mallard Fillmore
+Mandrake the Magician
+Mark Trail
+Marvin
+Mary Worth
+Moose and Molly
+Mother Goose & Grimm
+Mutts
+My Cage
+Non Sequitur
+Ollie and Quentin
+On the Fastrack
+Pajama Diaries
+Pardon My Planet
+Pearls Before Swine
+Phantom
+Piranha Club
+Popeye
+Prince Valiant
+Pros and Cons
